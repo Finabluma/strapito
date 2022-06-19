@@ -45,6 +45,18 @@
       },
       "component": "shared.seo"
     },
+    "imagen": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
     "contenido": {
       "pluginOptions": {
         "i18n": {
@@ -78,18 +90,6 @@
         }
       },
       "component": "prensa.prensa-relacionada"
-    },
-    "imagen": {
-      "allowedTypes": [
-        "images"
-      ],
-      "type": "media",
-      "multiple": false,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
     }
   }
 }
