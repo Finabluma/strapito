@@ -92,15 +92,16 @@ module.exports = () => ({
   },
 });
 
-// module.exports = () => ({
-//   graphql: {
-//     enabled: true,
-//     config: {
-//       defaultLimit: 30,
-//       maxLimit: 50
-//     }
-//   },
-// });
+module.exports = () => ({
+  graphql: {
+    enabled: true,
+    config: {
+      defaultLimit: 30,
+      maxLimit: 50,
+      playgroundAlways: true
+    }
+  },
+});
 
 module.exports = ({ env }) => ({
   upload: {
