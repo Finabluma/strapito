@@ -94,12 +94,16 @@ module.exports = () => ({
 
 module.exports = () => ({
   graphql: {
-    enabled: true,
     config: {
-      defaultLimit: 30,
-      maxLimit: 50,
-      playgroundAlways: true
-    }
+      endpoint: '/graphql',
+      shadowCRUD: true,
+      playgroundAlways: false,
+      depthLimit: 7,
+      amountLimit: 100,
+      apolloServer: {
+        tracing: false,
+      },
+    },
   },
 });
 
