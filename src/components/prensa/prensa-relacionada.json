@@ -8,6 +8,11 @@
   "attributes": {
     "intro": {
       "type": "string"
+    },
+    "prensas": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::prensa.prensa"
     }
   }
 }
